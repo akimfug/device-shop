@@ -1,0 +1,54 @@
+.device {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.img {
+    width: 185px;
+    height: 200px;
+}
+
+.name {
+    padding-top: 15px;
+    width: 130px;
+    
+    color: black;
+    text-align: left;
+}
+
+.price_stars {
+    font-family: "Kdam Thmor Pro", serif;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 22px;
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+.price {
+    color: #F84147;
+}
+
+.rating {
+    display: flex;    
+    padding-right: 0px;
+    color: #F3CF00;
+}
+.star {
+    width: 16px;
+    height: 16px;
+    background: url("../../../../middleware-exp/public/star.png") no-repeat;
+    margin-left: 6px;
+    background-size: cover; /* Или cover, если нужно полностью заполнить */
+}
+.rating::after {
+    content: img;
+}
