@@ -31,10 +31,6 @@ export const Devices: React.FC = () => {
         fetchData();
     }, []);
 
-
-    
-    console.log(data)
-
     return (
         <div className={styles.devices}>
             {data.map((device: DeviceType) => {
